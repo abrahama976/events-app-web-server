@@ -1,0 +1,50 @@
+<div>
+    <table>
+        <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Location</th>
+            <th>Date</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#events}}
+            <tr>
+                <td>{{ title }}</td>
+                <td>{{ description }}</td>
+                <td>{{ location }}</td>
+                <td>{{ date }}</td>
+            </tr>
+        {{/events}}
+        </tbody>
+    </table>
+</div>
+<div id="event-form-container">
+    <div>
+        <h2>Add an event</h2>
+    </div>
+    <form action="/event" method="post">
+        <div>
+            <div>
+                <label for="title">Title:</label>
+            </div>
+            <div>
+                <input id="title" name="title" type="text" placeholder="Event Title"/>
+            </div>
+        </div>
+        <div>
+            <div>
+                <label for="description">Description:</label>
+            </div>
+            <div>
+                <input id="description" name="description" type="text" placeholder="Event Description"/>
+            </div>
+        </div>
+        <div>
+            <input type="submit" name="submit" value="submit" />
+        </div>
+    </form>
+</div>
+
+

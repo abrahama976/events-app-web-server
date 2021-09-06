@@ -1,0 +1,10 @@
+/* cell padding */
+th, td { padding: 5px; }
+
+/* cell spacing */
+table { border-collapse: separate; border-spacing: 5px; } /* cellspacing="5" */
+table { border-collapse: collapse; border-spacing: 0; }   /* cellspacing="0" */
+
+/* vertical align */
+th, td { vertical-align: top; }
+
